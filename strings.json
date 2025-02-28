@@ -42,7 +42,8 @@
     "model_type": {
       "options": {
         "digital": "Digital Electronic Meter",
-        "gas": "Mechanical Digital Meter"
+        "gas": "Mechanical Digital Meter",
+        "pointer": "Pointer Meter"
       }
     }
   }

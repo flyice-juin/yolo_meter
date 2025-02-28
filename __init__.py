@@ -37,7 +37,7 @@ CONFIG_SCHEMA = vol.Schema(
                 vol.Required(CONF_HOST): cv.string,
                 vol.Optional(CONF_PORT, default=DEFAULT_PORT): cv.port,
                 vol.Required(CONF_CAMERA_ENTITY): cv.entity_id,
-                vol.Required(CONF_MODEL_TYPE): vol.In(["digital", "gas"]),
+                vol.Required(CONF_MODEL_TYPE): vol.In(["digital", "gas", "pointer"]),
                 vol.Optional(
                     CONF_SCAN_INTERVAL, default=DEFAULT_SCAN_INTERVAL
                 ): cv.positive_int,

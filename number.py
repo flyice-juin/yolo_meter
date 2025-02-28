@@ -50,7 +50,7 @@ class YoloMeterBaseline(CoordinatorEntity, NumberEntity):
         self._attr_name = f"YOLO {MODEL_TYPE_OPTIONS[model_type]} 基准数"
         self._attr_unique_id = f"{entry.entry_id}_baseline"
         self._attr_native_min_value = 0
-        self._attr_native_max_value = 999999
+        self._attr_native_max_value = 99999999
         self._attr_native_step = 1
         self._attr_mode = NumberMode.BOX
         self._attr_native_value = DEFAULT_BASELINE_VALUE

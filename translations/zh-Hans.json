@@ -43,7 +43,8 @@
       "model_type": {
         "options": {
           "digital": "电子数字仪表",
-          "gas": "机械数字仪表"
+          "gas": "机械数字仪表",
+          "pointer": "指针式仪表"
         }
       }
     },
