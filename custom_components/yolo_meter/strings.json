@@ -1,0 +1,53 @@
+{
+  "config": {
+    "title": "YOLO Meter Reader",
+    "step": {
+      "user": {
+        "title": "Set up YOLO Meter Reader",
+        "description": "Set up connection to YOLO meter recognition server",
+        "data": {
+          "host": "Host",
+          "port": "Port",
+          "camera_entity": "Camera Entity",
+          "rtsp_url": "RTSP Stream URL",
+          "model_type": "Model Type",
+          "scan_interval": "Scan Interval (minutes)",
+          "crop_coordinates": "Frame Selection Coordinates (x1,y1,x2,y2)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect",
+      "invalid_auth": "Invalid authentication",
+      "unknown": "Unexpected error"
+    },
+    "abort": {
+      "already_configured": "Device is already configured"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "YOLO Meter Reader Options",
+        "data": {
+          "host": "Host",
+          "port": "Port", 
+          "camera_entity": "Camera Entity",
+          "rtsp_url": "RTSP Stream URL",
+          "scan_interval": "Scan Interval (minutes)",
+          "crop_coordinates": "Frame Selection Coordinates (x1,y1,x2,y2)"
+        }
+      }
+    }
+  },
+  "selector": {
+    "model_type": {
+      "options": {
+        "digital": "Digital Electronic Meter",
+        "gas": "Mechanical Digital Meter",
+        "pointer": "Pointer Meter",
+        "water": "Water Meter"
+      }
+    }
+  }
+}
